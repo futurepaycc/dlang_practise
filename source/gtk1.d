@@ -13,27 +13,31 @@ import gtk.MainWindow;
 import gtk.Main;
 import gtk.Widget;
 import gtk.Label;
+import gtk.Button;
 
 void main(string[] args)
 {
 	Main.init(args);
 	MainWindow window = new MainWindow("一个小标题2");
-	window.addOnDestroy(delegate void(Widget w) { quitApp(); } );
+	window.addOnDestroy(delegate void(Widget w) { quitApp(); });
 
-	window.setDefaultSize(800,600);
-	
+	window.setDefaultSize(800, 600);
+
 	writeln("Hello GtkD Imperative");
 
-	window.add(new Label("汉字呢"));
+	// window.add(new Label("汉字呢"));
+
+	Button button = new Button("小按钮,点击推出哦");
+	button.addOnClicked(delegate void(Button b) { quitApp(); });
+	window.add(button);
 
 	// Show the window and its contents...
 	window.showAll();
-		
+
 	// give control over to the gtkD .
 	Main.run();
-	
-} // main()
 
+} // main()
 
 private void quitApp()
 {
@@ -42,5 +46,5 @@ private void quitApp()
 	// save work.
 	writeln("Bye.");
 	Main.quit();
-	
+
 } // quitApp()
