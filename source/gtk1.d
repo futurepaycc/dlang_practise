@@ -4,8 +4,12 @@
 +/
 
 /* 
-debug编译：
+example:
+https://gtkdcoding.com/2019/01/22/0003-add-a-button.html
+dmd compile：
 dmd -I/home/liunix/.dub/packages/gtk-d-3.9.0/gtk-d/generated/gtkd /home/liunix/.dub/packages/gtk-d-3.9.0/gtk-d/libgtkd-3.a -L--no-as-needed -L-ldl -g  ./source/gtk1.d -of=.dub/build/gtk1
+dub compile:
+dub build --single source/gtk1.d
  */
 
 import std.stdio;

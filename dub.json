@@ -1,6 +1,8 @@
 {
 	"dependencies": {
-		"gtk-d:gtkd": "~>3.9.0"
+		"gtk-d:gtkd": "~>3.9.0",
+		"llvm-d": "3.0.0",
+		"dwt": "1.0.5+swt-3.4.1"
 	},
 	"name": "hello1"
 }
