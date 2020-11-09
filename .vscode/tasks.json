@@ -12,6 +12,11 @@
             "label": "dub_clean",
             "type": "shell",
             "command": "rm -rf ${workspaceFolder}/source/${fileBasenameNoExtension} && rm -rf ${workspaceFolder}/source/${fileBasenameNoExtension}.o"
+        },
+        {
+            "label": "clean_binaries",
+            "type": "shell",
+            "command": "rm -rf ${workspaceFolder}/source/.dub && find ${workspaceFolder}/source --type=executable | xargs rm"
         }
     ]
 }
