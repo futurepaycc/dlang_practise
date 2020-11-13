@@ -4,4 +4,5 @@ dub.selections.json
 __dummy.html
 *.o
 *.obj
-./source/.dub
+source/.dub
+source/*.yaml

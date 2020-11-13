@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Launch",
+            "name": "gdb",
             "type": "cppdbg",
             "request": "launch",
             // "program": "/usr/bin/dub",
@@ -28,6 +28,16 @@
                     "ignoreFailures": true
                 }
             ],
+            "preLaunchTask": "dub_build",
+            "postDebugTask": "dub_clean"
+        },
+        {
+            "name": "lldb",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/source/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${workspaceFolder}",
             "preLaunchTask": "dub_build",
             "postDebugTask": "dub_clean"
         }

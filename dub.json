@@ -2,7 +2,8 @@
 	"dependencies": {
 		"gtk-d:gtkd": "~>3.9.0",
 		"llvm-d": "3.0.0",
-		"dwt": "1.0.5+swt-3.4.1"
+		"dwt": "1.0.5+swt-3.4.1",
+		"dyaml": "0.8.3"
 	},
 	"name": "hello1"
 }

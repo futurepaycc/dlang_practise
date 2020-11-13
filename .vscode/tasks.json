@@ -6,7 +6,7 @@
         {
             "label": "dub_build",
             "type": "shell",
-            "command": "dub build -v --single ${file}"
+            "command": "dub build --single ${file}"
         },
         {
             "label": "dub_clean",
