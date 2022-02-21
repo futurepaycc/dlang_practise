@@ -19,8 +19,7 @@ import gtk.Widget;
 import gtk.Label;
 import gtk.Button;
 
-void main(string[] args)
-{
+void main(string[] args) {
 	Main.init(args);
 	MainWindow window = new MainWindow("一个小标题2");
 	window.addOnDestroy(delegate void(Widget w) { quitApp(); });
@@ -43,8 +42,7 @@ void main(string[] args)
 
 } // main()
 
-private void quitApp()
-{
+private void quitApp() {
 	// This exists in case we want to do anything
 	// before exiting such as warn the user to
 	// save work.

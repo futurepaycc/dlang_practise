@@ -5,14 +5,12 @@
 import std.stdio;
 import dyaml;
 
-void main(string[] args)
-{
+void main(string[] args) {
     Node root = Loader.fromString("
 Hello World : [Hello, World]
 Answer : 42
 ").load();
-    foreach(string word; root["Hello World"])
-    {
+    foreach (string word; root["Hello World"]) {
         writeln(word);
     }
     writeln("The answer is ", root["Answer"].as!int);
